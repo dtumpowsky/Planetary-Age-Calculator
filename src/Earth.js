@@ -9,7 +9,6 @@ export class Earth {
   BirthdateInSeconds() {
     var birth = this.birthdate.getTime();
     return birth;
-
   }
 
   CurrentDateInSeconds() {
@@ -25,9 +24,9 @@ export class Earth {
     return ageInSeconds;
   }
 
-  AgeOnEarth(){
+  AgeOnEarth(birth) {
     var now = this.currentDate.getTime()/1000;
-    var birth = this.birthdate.getTime()/1000;
+    birth = this.birthdate.getTime()/1000;
     var ageInSeconds = now - birth;
 
     var ageInYears = Math.floor(ageInSeconds * (1/365.25) * (1/24) * (1/60) * (1/60));
