@@ -15,7 +15,7 @@ module.exports = {
   contentBase: './dist'
   },
   plugins: [
-  	 new UglifyJsPlugin({ sourceMap: true }),
+  	new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),   // new line
     new HtmlWebpackPlugin({
       title: 'My Journal',

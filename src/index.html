@@ -4,7 +4,42 @@
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body>
+  <div class="container">
+    <body>
 
-  </body>
+      <div class="form-group">
+        <label>Birthdate</label>
+        <input type="text" class="form-control" id="birthday" placeholder="Month, Day Year 00:00:00">
+      </div>
+
+      <label>Planet:</label>
+      <select id='Planet' name='life-expectancy' type='text'>
+        <option value=Mercury selected="selected">Mercury</option>
+        <option value=Venus>Venus</option>
+        <option value=Earth>Earth</option>
+        <option value=Mars>Mars</option>
+        <option value=Jupiter>Jupiter</option>
+      </select>
+
+      <label>Demographics:</label>
+      <select id='continent' name='life-expectancy' type='text'>
+        <option value=north-america selected="selected">North America</option>
+        <option value=south-america>South America</option>
+        <option value=Europe>Europe</option>
+        <option value=Africa>Africa</option>
+        <option value=Asia>Asia</option>
+        <option value=Oceana>Oceana</option>
+      </select>
+
+      <select id='gender' name='life-expectancy' type='text'>
+        <option value=male selected="selected">Male</option>
+        <option value=female>Female</option>
+      </select>
+
+      <button type="submit" class="btn btn-info" id="verify">Submit</button>
+       <p id="result"></p>
+       <p id="result2"></p>
+
+    </body>
+  </div>
 </html>
